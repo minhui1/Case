@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>学邦在线</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../script/jquery.min.js"></script>
+	<script>
+		function fontSize() {
+	        var w = $(window).width();
+	        w = w > 1920 ? 1920 : w;
+	        $("html").css("fontSize", w / 19.2 + "px");
+	    }
+	    fontSize();
+	    window.onresize = fontSize;
+	</script>
+</head>
+<body class="body_index">
+<div class="mod-main">
+	<div class="M-header"><a href="#"><img src="../images/logo.png" alt=""></a></div>
+	<div class="M-content">
+		<a href="login.html" class="mod-pic"><img src="../images/next_btn.png" alt=""><p>进入测试</p></a>
+		<h3>全国中小学在线听说测评系统</h3>
+		<p>National Primary and Middle Schools Online Listening & Speaking Testing System</p>
+	</div>
+	<div class="M-footer">
+		<div class="mod-box-one">
+			<div class="W-lf"><em>学术支持单位</em><span></span></div>
+			<div class="W-rg">
+				<dl class="list-A">
+					<a href="#">
+						<dt><img src="../images/img_01.png" alt=""></dt>
+						<dd>国际英语教育研究协会</dd>
+					</a>
+				</dl>
+				<dl class="list-B">
+					<a href="#">
+						<dt><img src="../images/img_02.png" alt=""></dt>
+						<dd>北京市教育学会学科英语教育研究会</dd>
+					</a>	
+				</dl>
+			</div>
+		</div>
+		<div class="mod-box-two">
+			<div class="W-lf"><em>技术支持单位</em><span></span></div>
+			<div class="W-rg">
+				<dl class="list-A">
+					<a href="#">
+						<dd> 北京听说在线教育科技有限公司</dd>
+					</a>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

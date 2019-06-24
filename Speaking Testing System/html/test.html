@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>学邦在线</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../script/jquery.min.js"></script>
+	<script>
+		function fontSize() {
+	        var w = $(window).width();
+	        w = w > 1920 ? 1920 : w;
+	        $("html").css("fontSize", w / 19.2 + "px");
+	    }
+	    fontSize();
+	    window.onresize = fontSize;
+	</script>
+</head>
+<body class="body_flex">
+	<div class="mod-main mod-test">
+		<div class="M-left"><div class="pic"><a href="#"><img src="../images/logo.png" alt=""></a></div></div>
+		<div class="M-right">
+			<div class="mod-box">
+				<div class="mod-middle">
+					<div class="header">
+						<h3><img src="../images/test_book.png" alt=""></h3>
+						<ul>
+							<li><em>请选择年级:</em><span><select name="" id="" class="W_select"><option value="小学">小学</option><option value="">1</option><option value="">1</option></select></span></li>
+							<li><em>请选择试卷:</em><span><select name="" id="" class="W_select"><option value="试卷一">试卷一</option><option value="">1</option><option value="">1</option></select></span></li>
+							<li><em>测试者姓名:</em><span class="after"><input type="text" class="W_input"></span></li>
+						</ul>
+					</div>
+					
+					<div class="footer">
+						<a href="testing.html" class="test_btn"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

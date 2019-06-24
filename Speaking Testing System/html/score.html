@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>学邦在线</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../script/jquery.min.js"></script>
+	<script>
+	function fontSize() {
+        var w = $(window).width();
+        w = w > 1920 ? 1920 : w;
+        $("html").css("fontSize", w / 19.2 + "px");
+		  if(w<=1200){
+		   $("html").css("fontSize", 1200 / 19.2 + "px");
+		  }
+    }
+    fontSize();
+    window.onresize = fontSize;
+	</script>
+</head>
+<body class="body_flex">
+	<div class="mod-main mod-score">
+		<div class="M-left"><div class="pic"></div></div>
+		<div class="M-right">
+			<div class="mod-box">
+				<div class="mod-middle">
+					<div class="header">
+						<h3><img src="../images/score_logo.png" alt=""></h3>
+						<div class="mod-txt">
+							<b>楚笑苹</b><em>同学</em><span><i class="m-font-number">100</i></span><strong>分</strong>
+						</div>
+						<h4>全国中小学在线听说测评系统</h4>
+						<p>National Primary and Middle Schools Listening & Speaking Testing System</p>
+					</div>
+					<div class="content">
+						<div class="mod-left"><img src="../images/code.jpg" alt=""></div>
+						<div class="mod-right">
+							<ul>
+								<li>快和你的爸爸妈妈一起分享你的成绩吧！</li>
+								<li>如需查询本次测评报告及更多练习，</li>
+								<li>请扫描左侧二维码下载手机端APP“语测邦”。</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="footer">
+						<a href="index.html" class="score_btn"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

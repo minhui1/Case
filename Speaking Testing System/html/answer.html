@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>学邦在线</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../script/jquery.min.js"></script>
+	<script>
+	function fontSize() {
+        var w = $(window).width();
+        w = w > 1920 ? 1920 : w;
+        $("html").css("fontSize", w / 19.2 + "px");
+		  if(w<=1200){
+		   $("html").css("fontSize", 1200 / 19.2 + "px");
+		  }
+    }
+    fontSize();
+    window.onresize = fontSize;
+	</script>
+</head>
+<body class="body_test">
+<div class="mod-main mod-answer">
+	<div class="M-top"></div>
+	<div class="M-bottom"></div>
+	<div class="mod-box">
+		<div class="M-content">
+			<p>考试剩余时间<span><em>0</em><em>5</em><em>:</em><em>2</em><em>6</em></span></p>
+			<div class="mod-text">
+				<p>I like watching TV. </p>
+			</div>
+			<div class="mod-btn">
+				<div class="info info-b">
+					<a href="#" class="icon icon_tape"></a>
+				</div>
+				<div class="info info-c"><b>本题剩余时间</b><span><em style="width:60%;"></em></span></div>
+			</div>
+		</div>
+		<div class="M-footer">
+			<a href="#" class="answer_btn"></a>
+		</div>
+	</div>
+</div>
+<!-- 遮罩 -->
+<div class="M-layer-black-bg" style="display: ;"></div>
+<!-- 遮罩 /-->
+<!-- 弹层 -->
+<div class="M-layer">
+	<span class="mod-data">76%</span>
+	<div class="mod-laybox"><span><em style="width:60%;"></em></span></div>
+	<h4>考试结束，数据正在上传请稍后...</h4>
+</div>
+<!-- 弹层 /-->
+</body>
+</html>
